@@ -6,6 +6,7 @@ import quoters.phase2.InjectRandomInt;
 
 import javax.annotation.PostConstruct;
 
+/*Сеттеры обязательно нужны здесь, т.к. настраивается это через xml*/
 @Profiling
 @DeprecatedClass(newImpl = T1000.class)
 public class TerminatorQuoter implements Quoter {
@@ -30,6 +31,7 @@ public class TerminatorQuoter implements Quoter {
     public void sayQuote() {
         System.out.println("Phase 3");
         for (int i = 0; i < repeat; i++) {
+            //печатаем нашу цитату
             System.out.println("message = " + message);
         }
     }

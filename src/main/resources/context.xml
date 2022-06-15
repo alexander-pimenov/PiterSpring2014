@@ -11,13 +11,14 @@
     <!--<bean class="org.springframework.context.annotation.CommonAnnotationBeanPostProcessor"/>-->
     <context:annotation-config />
 
+    <!--Прописываем наши бины-->
     <bean class="quoters.DeprecationHandlerBeanFactoryPostProcessor"/>
     <bean class="quoters.phase3.PostProxyInvokerContextListener"/>
     <bean class="quoters.phase2.InjectRandomBeanAnnotationPostProcessor" />
 
     <bean class="quoters.profiling.ProfilingHandlerBeanPostProcessor" />
 
-    <bean class="quoters.TerminatorQuoter" id="terminatorQuater">
+    <bean class="quoters.TerminatorQuoter" id="terminatorQuoter">
         <property name="message" value="I'll be back"/>
     </bean>
 
