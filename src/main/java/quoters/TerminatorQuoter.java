@@ -6,12 +6,14 @@ import quoters.phase2.InjectRandomInt;
 
 import javax.annotation.PostConstruct;
 
-/*Сеттеры обязательно нужны здесь, т.к. настраивается это через xml*/
+/*Сеттеры обязательно нужны здесь, т.к. настраивается это через xml
+* Чтобы видеть как отрабатывает этот класс в классе Main, нужно закоментировать
+* аннотацию @DeprecatedClass(newImpl = T1000.class)*/
 @Profiling
-@DeprecatedClass(newImpl = T1000.class)
+//@DeprecatedClass(newImpl = T1000.class)
 public class TerminatorQuoter implements Quoter {
 
-    @InjectRandomInt(min = 2, max = 7)
+    @InjectRandomInt(min = 2, max = 9)
     private int repeat;
 
     private String message;
