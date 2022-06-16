@@ -9,7 +9,7 @@ import java.lang.reflect.Field;
 import java.util.Random;
 
 //Можно прописать бин в xml, а можно поставить @Component
-//@Component
+//@Component //закоментирован, т.к. прописан в xml
 public class InjectRandomBeanAnnotationPostProcessor implements BeanPostProcessor {
 
     @Override
